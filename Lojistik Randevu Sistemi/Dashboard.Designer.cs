@@ -29,11 +29,7 @@ namespace Lojistik_Randevu_Sistemi
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.bunifuCircleProgress2 = new Bunifu.UI.WinForms.BunifuCircleProgress();
             this.bunifuPanel4 = new Bunifu.UI.WinForms.BunifuPanel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -52,7 +48,14 @@ namespace Lojistik_Randevu_Sistemi
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            this.bunifuPanel5 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.bunifuPanel6 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.bunifuPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.bunifuPanel3.SuspendLayout();
@@ -61,26 +64,11 @@ namespace Lojistik_Randevu_Sistemi
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.bunifuPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.bunifuPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
-            // 
-            // chart1
-            // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            this.chart1.Cursor = System.Windows.Forms.Cursors.Cross;
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
-            this.chart1.Location = new System.Drawing.Point(30, 317);
-            this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            series2.YValuesPerPoint = 2;
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(300, 177);
-            this.chart1.TabIndex = 26;
-            this.chart1.Text = "chart1";
             // 
             // bunifuCircleProgress2
             // 
@@ -94,7 +82,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuCircleProgress2.IsPercentage = false;
             this.bunifuCircleProgress2.LineProgressThickness = 10;
             this.bunifuCircleProgress2.LineThickness = 10;
-            this.bunifuCircleProgress2.Location = new System.Drawing.Point(601, 12);
+            this.bunifuCircleProgress2.Location = new System.Drawing.Point(609, 18);
             this.bunifuCircleProgress2.Name = "bunifuCircleProgress2";
             this.bunifuCircleProgress2.ProgressAnimationSpeed = 200;
             this.bunifuCircleProgress2.ProgressBackColor = System.Drawing.Color.Gainsboro;
@@ -129,7 +117,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuPanel4.Controls.Add(this.pictureBox5);
             this.bunifuPanel4.Controls.Add(this.label8);
             this.bunifuPanel4.Controls.Add(this.label9);
-            this.bunifuPanel4.Location = new System.Drawing.Point(303, 155);
+            this.bunifuPanel4.Location = new System.Drawing.Point(311, 175);
             this.bunifuPanel4.Name = "bunifuPanel4";
             this.bunifuPanel4.ShowBorders = true;
             this.bunifuPanel4.Size = new System.Drawing.Size(274, 127);
@@ -181,7 +169,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuPanel3.Controls.Add(this.pictureBox4);
             this.bunifuPanel3.Controls.Add(this.label6);
             this.bunifuPanel3.Controls.Add(this.label7);
-            this.bunifuPanel3.Location = new System.Drawing.Point(303, 12);
+            this.bunifuPanel3.Location = new System.Drawing.Point(311, 18);
             this.bunifuPanel3.Name = "bunifuPanel3";
             this.bunifuPanel3.ShowBorders = true;
             this.bunifuPanel3.Size = new System.Drawing.Size(274, 127);
@@ -234,7 +222,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuCircleProgress1.IsPercentage = false;
             this.bunifuCircleProgress1.LineProgressThickness = 10;
             this.bunifuCircleProgress1.LineThickness = 10;
-            this.bunifuCircleProgress1.Location = new System.Drawing.Point(601, 174);
+            this.bunifuCircleProgress1.Location = new System.Drawing.Point(609, 180);
             this.bunifuCircleProgress1.Name = "bunifuCircleProgress1";
             this.bunifuCircleProgress1.ProgressAnimationSpeed = 200;
             this.bunifuCircleProgress1.ProgressBackColor = System.Drawing.Color.Gainsboro;
@@ -269,7 +257,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuPanel2.Controls.Add(this.pictureBox3);
             this.bunifuPanel2.Controls.Add(this.label4);
             this.bunifuPanel2.Controls.Add(this.label5);
-            this.bunifuPanel2.Location = new System.Drawing.Point(12, 152);
+            this.bunifuPanel2.Location = new System.Drawing.Point(20, 172);
             this.bunifuPanel2.Name = "bunifuPanel2";
             this.bunifuPanel2.ShowBorders = true;
             this.bunifuPanel2.Size = new System.Drawing.Size(274, 127);
@@ -321,7 +309,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuPanel1.Controls.Add(this.pictureBox1);
             this.bunifuPanel1.Controls.Add(this.label3);
             this.bunifuPanel1.Controls.Add(this.label2);
-            this.bunifuPanel1.Location = new System.Drawing.Point(12, 12);
+            this.bunifuPanel1.Location = new System.Drawing.Point(20, 18);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
             this.bunifuPanel1.Size = new System.Drawing.Size(274, 127);
@@ -362,22 +350,126 @@ namespace Lojistik_Randevu_Sistemi
             this.label2.TabIndex = 10;
             this.label2.Text = "Müşteriler";
             // 
+            // bunifuPanel5
+            // 
+            this.bunifuPanel5.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(145)))), ((int)(((byte)(222)))));
+            this.bunifuPanel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel5.BackgroundImage")));
+            this.bunifuPanel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel5.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel5.BorderRadius = 0;
+            this.bunifuPanel5.BorderThickness = 1;
+            this.bunifuPanel5.Controls.Add(this.pictureBox2);
+            this.bunifuPanel5.Controls.Add(this.label1);
+            this.bunifuPanel5.Controls.Add(this.label10);
+            this.bunifuPanel5.Location = new System.Drawing.Point(20, 344);
+            this.bunifuPanel5.Name = "bunifuPanel5";
+            this.bunifuPanel5.ShowBorders = true;
+            this.bunifuPanel5.Size = new System.Drawing.Size(274, 127);
+            this.bunifuPanel5.TabIndex = 20;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(142, 3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(129, 121);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Helvetica Neue", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(8, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 57);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "1,359";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Helvetica Neue", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(14, 15);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(91, 24);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Müşteriler";
+            // 
+            // bunifuPanel6
+            // 
+            this.bunifuPanel6.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(183)))), ((int)(((byte)(111)))));
+            this.bunifuPanel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel6.BackgroundImage")));
+            this.bunifuPanel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuPanel6.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel6.BorderRadius = 0;
+            this.bunifuPanel6.BorderThickness = 1;
+            this.bunifuPanel6.Controls.Add(this.pictureBox6);
+            this.bunifuPanel6.Controls.Add(this.label11);
+            this.bunifuPanel6.Controls.Add(this.label12);
+            this.bunifuPanel6.Location = new System.Drawing.Point(311, 344);
+            this.bunifuPanel6.Name = "bunifuPanel6";
+            this.bunifuPanel6.ShowBorders = true;
+            this.bunifuPanel6.Size = new System.Drawing.Size(274, 127);
+            this.bunifuPanel6.TabIndex = 23;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(142, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(129, 121);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 12;
+            this.pictureBox6.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Helvetica Neue", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(8, 39);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(106, 57);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "557";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Helvetica Neue", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(14, 15);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(124, 24);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "Günlük Koliler";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(787, 507);
-            this.Controls.Add(this.chart1);
             this.Controls.Add(this.bunifuCircleProgress2);
             this.Controls.Add(this.bunifuPanel4);
+            this.Controls.Add(this.bunifuPanel6);
             this.Controls.Add(this.bunifuPanel3);
             this.Controls.Add(this.bunifuCircleProgress1);
             this.Controls.Add(this.bunifuPanel2);
+            this.Controls.Add(this.bunifuPanel5);
             this.Controls.Add(this.bunifuPanel1);
             this.Name = "Dashboard";
             this.Text = "Dashboard";
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.bunifuPanel4.ResumeLayout(false);
             this.bunifuPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -390,13 +482,17 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuPanel1.ResumeLayout(false);
             this.bunifuPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.bunifuPanel5.ResumeLayout(false);
+            this.bunifuPanel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.bunifuPanel6.ResumeLayout(false);
+            this.bunifuPanel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private Bunifu.UI.WinForms.BunifuCircleProgress bunifuCircleProgress2;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel4;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -415,5 +511,13 @@ namespace Lojistik_Randevu_Sistemi
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel5;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label10;
+        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel6;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
