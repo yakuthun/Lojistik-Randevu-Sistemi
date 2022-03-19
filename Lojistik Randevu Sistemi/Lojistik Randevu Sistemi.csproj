@@ -108,6 +108,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMusteriDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMusteriDuzenle.Designer.cs">
+      <DependentUpon>AdminMusteriDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMusteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMusteriEkle.Designer.cs">
+      <DependentUpon>AdminMusteriEkle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,8 +132,32 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Musteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteri.Designer.cs">
+      <DependentUpon>Musteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Musteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Musteriler.Designer.cs">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operasyonlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operasyonlar.Designer.cs">
+      <DependentUpon>Operasyonlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tedarikciler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tedarikciler.Designer.cs">
+      <DependentUpon>Tedarikciler.cs</DependentUpon>
+    </Compile>
     <Compile Include="Yonetici.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,11 +170,26 @@
     <Compile Include="Yoneticiler.Designer.cs">
       <DependentUpon>Yoneticiler.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AdminMusteriDuzenle.resx">
+      <DependentUpon>AdminMusteriDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMusteriEkle.resx">
+      <DependentUpon>AdminMusteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteri.resx">
+      <DependentUpon>Musteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Musteriler.resx">
+      <DependentUpon>Musteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Operasyonlar.resx">
+      <DependentUpon>Operasyonlar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -150,6 +201,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Tedarikciler.resx">
+      <DependentUpon>Tedarikciler.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Yonetici.resx">
       <DependentUpon>Yonetici.cs</DependentUpon>
     </EmbeddedResource>

@@ -39,16 +39,16 @@ namespace Lojistik_Randevu_Sistemi
             this.btnYoneticiler = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnDashboard = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
-            this.LblBaslik = new System.Windows.Forms.Label();
             this.dashboard = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LblBaslik = new System.Windows.Forms.Label();
+            this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel2.SuspendLayout();
             this.dashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -95,6 +95,7 @@ namespace Lojistik_Randevu_Sistemi
             this.btnTedarikciler.Name = "btnTedarikciler";
             this.btnTedarikciler.Size = new System.Drawing.Size(224, 86);
             this.btnTedarikciler.TabIndex = 10;
+            this.btnTedarikciler.Click += new System.EventHandler(this.btnTedarikciler_Click);
             // 
             // btnOperasyon
             // 
@@ -114,6 +115,7 @@ namespace Lojistik_Randevu_Sistemi
             this.btnOperasyon.Name = "btnOperasyon";
             this.btnOperasyon.Size = new System.Drawing.Size(224, 86);
             this.btnOperasyon.TabIndex = 9;
+            this.btnOperasyon.Click += new System.EventHandler(this.btnOperasyon_Click);
             // 
             // btnMusteriler
             // 
@@ -133,6 +135,7 @@ namespace Lojistik_Randevu_Sistemi
             this.btnMusteriler.Name = "btnMusteriler";
             this.btnMusteriler.Size = new System.Drawing.Size(224, 86);
             this.btnMusteriler.TabIndex = 8;
+            this.btnMusteriler.Click += new System.EventHandler(this.btnMusteriler_Click_1);
             // 
             // btnYoneticiler
             // 
@@ -179,15 +182,36 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuElipse1.ElipseRadius = 20;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // panel2
+            // dashboard
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(36)))), ((int)(((byte)(185)))));
-            this.panel2.Controls.Add(this.bunifuImageButton1);
-            this.panel2.Controls.Add(this.LblBaslik);
-            this.panel2.Location = new System.Drawing.Point(224, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(803, 41);
-            this.panel2.TabIndex = 1;
+            this.dashboard.BackColor = System.Drawing.Color.White;
+            this.dashboard.Controls.Add(this.pictureBox1);
+            this.dashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.dashboard.Location = new System.Drawing.Point(224, 39);
+            this.dashboard.Name = "dashboard";
+            this.dashboard.Size = new System.Drawing.Size(803, 546);
+            this.dashboard.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-5, -50);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(810, 610);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // LblBaslik
+            // 
+            this.LblBaslik.AutoSize = true;
+            this.LblBaslik.Font = new System.Drawing.Font("Netflix Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblBaslik.ForeColor = System.Drawing.Color.White;
+            this.LblBaslik.Location = new System.Drawing.Point(8, 8);
+            this.LblBaslik.Name = "LblBaslik";
+            this.LblBaslik.Size = new System.Drawing.Size(229, 24);
+            this.LblBaslik.TabIndex = 8;
+            this.LblBaslik.Text = "Lojistik Randevu Sistemi";
             // 
             // bunifuImageButton1
             // 
@@ -224,36 +248,15 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuImageButton1.ZoomSpeed = 10;
             this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
-            // LblBaslik
+            // panel2
             // 
-            this.LblBaslik.AutoSize = true;
-            this.LblBaslik.Font = new System.Drawing.Font("Netflix Sans", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblBaslik.ForeColor = System.Drawing.Color.White;
-            this.LblBaslik.Location = new System.Drawing.Point(8, 8);
-            this.LblBaslik.Name = "LblBaslik";
-            this.LblBaslik.Size = new System.Drawing.Size(229, 24);
-            this.LblBaslik.TabIndex = 8;
-            this.LblBaslik.Text = "Lojistik Randevu Sistemi";
-            // 
-            // dashboard
-            // 
-            this.dashboard.BackColor = System.Drawing.Color.White;
-            this.dashboard.Controls.Add(this.pictureBox1);
-            this.dashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.dashboard.Location = new System.Drawing.Point(224, 39);
-            this.dashboard.Name = "dashboard";
-            this.dashboard.Size = new System.Drawing.Size(803, 546);
-            this.dashboard.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-5, -50);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(810, 610);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(36)))), ((int)(((byte)(185)))));
+            this.panel2.Controls.Add(this.bunifuImageButton1);
+            this.panel2.Controls.Add(this.LblBaslik);
+            this.panel2.Location = new System.Drawing.Point(224, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(803, 41);
+            this.panel2.TabIndex = 1;
             // 
             // Yonetici
             // 
@@ -276,10 +279,10 @@ namespace Lojistik_Randevu_Sistemi
             this.Load += new System.EventHandler(this.Yonetici_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.dashboard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -288,9 +291,6 @@ namespace Lojistik_Randevu_Sistemi
 
         private System.Windows.Forms.Panel panel1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label LblBaslik;
-        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Bunifu.Framework.UI.BunifuTileButton btnDashboard;
         private Bunifu.Framework.UI.BunifuTileButton btnTedarikciler;
@@ -299,5 +299,8 @@ namespace Lojistik_Randevu_Sistemi
         private Bunifu.Framework.UI.BunifuTileButton btnYoneticiler;
         private System.Windows.Forms.Panel dashboard;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel2;
+        private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
+        private System.Windows.Forms.Label LblBaslik;
     }
 }

@@ -180,7 +180,7 @@ namespace Lojistik_Randevu_Sistemi
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
             this.bunifuDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1});
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
@@ -304,7 +304,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuTextBox2.ShortcutsEnabled = true;
             this.bunifuTextBox2.Size = new System.Drawing.Size(180, 37);
             this.bunifuTextBox2.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox2.TabIndex = 3;
+            this.bunifuTextBox2.TabIndex = 1;
             this.bunifuTextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuTextBox2.TextMarginBottom = 0;
             this.bunifuTextBox2.TextMarginLeft = 3;
@@ -441,7 +441,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuButton1.OnPressedState.IconLeftImage = null;
             this.bunifuButton1.OnPressedState.IconRightImage = null;
             this.bunifuButton1.Size = new System.Drawing.Size(154, 37);
-            this.bunifuButton1.TabIndex = 8;
+            this.bunifuButton1.TabIndex = 6;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton1.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.bunifuButton1.TextMarginLeft = 0;
@@ -513,7 +513,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuTextBox3.ShortcutsEnabled = true;
             this.bunifuTextBox3.Size = new System.Drawing.Size(180, 37);
             this.bunifuTextBox3.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox3.TabIndex = 2;
+            this.bunifuTextBox3.TabIndex = 1;
             this.bunifuTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuTextBox3.TextMarginBottom = 0;
             this.bunifuTextBox3.TextMarginLeft = 3;
@@ -587,7 +587,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuTextBox4.ShortcutsEnabled = true;
             this.bunifuTextBox4.Size = new System.Drawing.Size(180, 37);
             this.bunifuTextBox4.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox4.TabIndex = 4;
+            this.bunifuTextBox4.TabIndex = 1;
             this.bunifuTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuTextBox4.TextMarginBottom = 0;
             this.bunifuTextBox4.TextMarginLeft = 3;
@@ -683,7 +683,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuTextBox5.ShortcutsEnabled = true;
             this.bunifuTextBox5.Size = new System.Drawing.Size(180, 37);
             this.bunifuTextBox5.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox5.TabIndex = 5;
+            this.bunifuTextBox5.TabIndex = 1;
             this.bunifuTextBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuTextBox5.TextMarginBottom = 0;
             this.bunifuTextBox5.TextMarginLeft = 3;
@@ -757,7 +757,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuTextBox6.ShortcutsEnabled = true;
             this.bunifuTextBox6.Size = new System.Drawing.Size(138, 37);
             this.bunifuTextBox6.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.bunifuTextBox6.TabIndex = 6;
+            this.bunifuTextBox6.TabIndex = 1;
             this.bunifuTextBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bunifuTextBox6.TextMarginBottom = 0;
             this.bunifuTextBox6.TextMarginLeft = 3;
@@ -870,7 +870,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuButton2.OnPressedState.IconLeftImage = null;
             this.bunifuButton2.OnPressedState.IconRightImage = null;
             this.bunifuButton2.Size = new System.Drawing.Size(154, 37);
-            this.bunifuButton2.TabIndex = 9;
+            this.bunifuButton2.TabIndex = 6;
             this.bunifuButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton2.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.bunifuButton2.TextMarginLeft = 0;
@@ -959,7 +959,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuButton3.OnPressedState.IconLeftImage = null;
             this.bunifuButton3.OnPressedState.IconRightImage = null;
             this.bunifuButton3.Size = new System.Drawing.Size(154, 37);
-            this.bunifuButton3.TabIndex = 10;
+            this.bunifuButton3.TabIndex = 6;
             this.bunifuButton3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton3.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.bunifuButton3.TextMarginLeft = 0;
@@ -1048,7 +1048,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuButton4.OnPressedState.IconLeftImage = null;
             this.bunifuButton4.OnPressedState.IconRightImage = null;
             this.bunifuButton4.Size = new System.Drawing.Size(154, 37);
-            this.bunifuButton4.TabIndex = 0;
+            this.bunifuButton4.TabIndex = 6;
             this.bunifuButton4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.bunifuButton4.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.bunifuButton4.TextMarginLeft = 0;

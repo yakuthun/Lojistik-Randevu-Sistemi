@@ -90,5 +90,25 @@ namespace Lojistik_Randevu_Sistemi
         {
             Application.Exit();
         }
+
+        private void btnMusteriler_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Musteriler(), sender);
+        }
+
+        private void btnMusteriler_Click_1(object sender, EventArgs e)
+        {
+            OpenChildForm(new Musteriler(), sender);
+        }
+
+        private void btnOperasyon_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Operasyonlar(), sender);
+        }
+
+        private void btnTedarikciler_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Tedarikciler(), sender);
+        }
     }
 }
