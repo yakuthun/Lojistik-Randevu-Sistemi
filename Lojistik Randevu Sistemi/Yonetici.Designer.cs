@@ -44,6 +44,7 @@ namespace Lojistik_Randevu_Sistemi
             this.LblBaslik = new System.Windows.Forms.Label();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.dashboard.SuspendLayout();
@@ -258,6 +259,13 @@ namespace Lojistik_Randevu_Sistemi
             this.panel2.Size = new System.Drawing.Size(803, 41);
             this.panel2.TabIndex = 1;
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel2;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // Yonetici
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -302,5 +310,6 @@ namespace Lojistik_Randevu_Sistemi
         private System.Windows.Forms.Panel panel2;
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.Label LblBaslik;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

@@ -25,8 +25,26 @@ namespace Lojistik_Randevu_Sistemi
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Yonetici frm = new Yonetici();
-            frm.Show();
+            
+            if (bunifuTextBox1.Text == "1")
+            {
+                Yonetici frm1 = new Yonetici();
+                frm1.Show();
+            }
+            if (bunifuTextBox1.Text == "2")
+            {
+                Musteri frm2 = new Musteri();
+                frm2.Show();
+            }
+            if (bunifuTextBox1.Text == "3")
+            {
+                Tedarikci frm3 = new Tedarikci();
+                frm3.Show();
+            }
+            else
+            {
+                MessageBox.Show("asd");
+            }
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)

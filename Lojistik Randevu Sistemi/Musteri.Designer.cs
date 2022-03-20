@@ -36,15 +36,16 @@ namespace Lojistik_Randevu_Sistemi
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnTedarikciler = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnOperasyon = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnMusteriler = new Bunifu.Framework.UI.BunifuTileButton();
-            this.btnYoneticiler = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnReddedilenler = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnOnayBekleyen = new Bunifu.Framework.UI.BunifuTileButton();
+            this.btnOnaylananlar = new Bunifu.Framework.UI.BunifuTileButton();
             this.btnDashboard = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.dashboard = new System.Windows.Forms.Panel();
             this.bunifuImageButton1 = new Bunifu.UI.WinForms.BunifuImageButton();
             this.LblBaslik = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -60,21 +61,21 @@ namespace Lojistik_Randevu_Sistemi
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-5, -50);
+            this.pictureBox1.Location = new System.Drawing.Point(113, 45);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(810, 610);
+            this.pictureBox1.Size = new System.Drawing.Size(599, 445);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.btnTedarikciler);
-            this.panel1.Controls.Add(this.btnOperasyon);
-            this.panel1.Controls.Add(this.btnMusteriler);
-            this.panel1.Controls.Add(this.btnYoneticiler);
+            this.panel1.Controls.Add(this.btnReddedilenler);
+            this.panel1.Controls.Add(this.btnOnayBekleyen);
+            this.panel1.Controls.Add(this.btnOnaylananlar);
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -84,7 +85,7 @@ namespace Lojistik_Randevu_Sistemi
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(199)))));
+            this.pictureBox2.BackColor = System.Drawing.Color.Black;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
@@ -95,9 +96,9 @@ namespace Lojistik_Randevu_Sistemi
             // 
             // btnTedarikciler
             // 
-            this.btnTedarikciler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
-            this.btnTedarikciler.color = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
-            this.btnTedarikciler.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(120)))));
+            this.btnTedarikciler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnTedarikciler.color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnTedarikciler.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(180)))), ((int)(((byte)(85)))));
             this.btnTedarikciler.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTedarikciler.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.btnTedarikciler.ForeColor = System.Drawing.Color.White;
@@ -106,74 +107,78 @@ namespace Lojistik_Randevu_Sistemi
             this.btnTedarikciler.ImageZoom = 20;
             this.btnTedarikciler.LabelPosition = 41;
             this.btnTedarikciler.LabelText = "Tedarikçi Girişi";
-            this.btnTedarikciler.Location = new System.Drawing.Point(0, 494);
+            this.btnTedarikciler.Location = new System.Drawing.Point(0, 200);
             this.btnTedarikciler.Margin = new System.Windows.Forms.Padding(6);
             this.btnTedarikciler.Name = "btnTedarikciler";
             this.btnTedarikciler.Size = new System.Drawing.Size(224, 86);
             this.btnTedarikciler.TabIndex = 10;
+            this.btnTedarikciler.Click += new System.EventHandler(this.btnTedarikciler_Click);
             // 
-            // btnOperasyon
+            // btnReddedilenler
             // 
-            this.btnOperasyon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
-            this.btnOperasyon.color = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
-            this.btnOperasyon.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(120)))));
-            this.btnOperasyon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOperasyon.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.btnOperasyon.ForeColor = System.Drawing.Color.White;
-            this.btnOperasyon.Image = ((System.Drawing.Image)(resources.GetObject("btnOperasyon.Image")));
-            this.btnOperasyon.ImagePosition = 5;
-            this.btnOperasyon.ImageZoom = 20;
-            this.btnOperasyon.LabelPosition = 41;
-            this.btnOperasyon.LabelText = "Operasyon";
-            this.btnOperasyon.Location = new System.Drawing.Point(0, 396);
-            this.btnOperasyon.Margin = new System.Windows.Forms.Padding(6);
-            this.btnOperasyon.Name = "btnOperasyon";
-            this.btnOperasyon.Size = new System.Drawing.Size(224, 86);
-            this.btnOperasyon.TabIndex = 9;
+            this.btnReddedilenler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnReddedilenler.color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnReddedilenler.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(180)))), ((int)(((byte)(85)))));
+            this.btnReddedilenler.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReddedilenler.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnReddedilenler.ForeColor = System.Drawing.Color.White;
+            this.btnReddedilenler.Image = ((System.Drawing.Image)(resources.GetObject("btnReddedilenler.Image")));
+            this.btnReddedilenler.ImagePosition = 0;
+            this.btnReddedilenler.ImageZoom = 25;
+            this.btnReddedilenler.LabelPosition = 41;
+            this.btnReddedilenler.LabelText = "Reddedilenler";
+            this.btnReddedilenler.Location = new System.Drawing.Point(0, 484);
+            this.btnReddedilenler.Margin = new System.Windows.Forms.Padding(6);
+            this.btnReddedilenler.Name = "btnReddedilenler";
+            this.btnReddedilenler.Size = new System.Drawing.Size(224, 86);
+            this.btnReddedilenler.TabIndex = 9;
+            this.btnReddedilenler.Click += new System.EventHandler(this.btnReddedilenler_Click);
             // 
-            // btnMusteriler
+            // btnOnayBekleyen
             // 
-            this.btnMusteriler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
-            this.btnMusteriler.color = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
-            this.btnMusteriler.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(120)))));
-            this.btnMusteriler.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMusteriler.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.btnMusteriler.ForeColor = System.Drawing.Color.White;
-            this.btnMusteriler.Image = ((System.Drawing.Image)(resources.GetObject("btnMusteriler.Image")));
-            this.btnMusteriler.ImagePosition = 5;
-            this.btnMusteriler.ImageZoom = 20;
-            this.btnMusteriler.LabelPosition = 41;
-            this.btnMusteriler.LabelText = "Müşteriler";
-            this.btnMusteriler.Location = new System.Drawing.Point(0, 298);
-            this.btnMusteriler.Margin = new System.Windows.Forms.Padding(6);
-            this.btnMusteriler.Name = "btnMusteriler";
-            this.btnMusteriler.Size = new System.Drawing.Size(224, 86);
-            this.btnMusteriler.TabIndex = 8;
+            this.btnOnayBekleyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnOnayBekleyen.color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnOnayBekleyen.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(180)))), ((int)(((byte)(85)))));
+            this.btnOnayBekleyen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOnayBekleyen.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnOnayBekleyen.ForeColor = System.Drawing.Color.White;
+            this.btnOnayBekleyen.Image = ((System.Drawing.Image)(resources.GetObject("btnOnayBekleyen.Image")));
+            this.btnOnayBekleyen.ImagePosition = 0;
+            this.btnOnayBekleyen.ImageZoom = 25;
+            this.btnOnayBekleyen.LabelPosition = 41;
+            this.btnOnayBekleyen.LabelText = "Onay Bekleyen";
+            this.btnOnayBekleyen.Location = new System.Drawing.Point(0, 298);
+            this.btnOnayBekleyen.Margin = new System.Windows.Forms.Padding(6);
+            this.btnOnayBekleyen.Name = "btnOnayBekleyen";
+            this.btnOnayBekleyen.Size = new System.Drawing.Size(224, 86);
+            this.btnOnayBekleyen.TabIndex = 8;
+            this.btnOnayBekleyen.Click += new System.EventHandler(this.btnOnayBekleyen_Click);
             // 
-            // btnYoneticiler
+            // btnOnaylananlar
             // 
-            this.btnYoneticiler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
-            this.btnYoneticiler.color = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
-            this.btnYoneticiler.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(120)))));
-            this.btnYoneticiler.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnYoneticiler.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.btnYoneticiler.ForeColor = System.Drawing.Color.White;
-            this.btnYoneticiler.Image = ((System.Drawing.Image)(resources.GetObject("btnYoneticiler.Image")));
-            this.btnYoneticiler.ImagePosition = 1;
-            this.btnYoneticiler.ImageZoom = 25;
-            this.btnYoneticiler.LabelPosition = 41;
-            this.btnYoneticiler.LabelText = "Yöneticiler";
-            this.btnYoneticiler.Location = new System.Drawing.Point(0, 200);
-            this.btnYoneticiler.Margin = new System.Windows.Forms.Padding(6);
-            this.btnYoneticiler.Name = "btnYoneticiler";
-            this.btnYoneticiler.Size = new System.Drawing.Size(224, 86);
-            this.btnYoneticiler.TabIndex = 7;
+            this.btnOnaylananlar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnOnaylananlar.color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnOnaylananlar.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(180)))), ((int)(((byte)(85)))));
+            this.btnOnaylananlar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOnaylananlar.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.btnOnaylananlar.ForeColor = System.Drawing.Color.White;
+            this.btnOnaylananlar.Image = ((System.Drawing.Image)(resources.GetObject("btnOnaylananlar.Image")));
+            this.btnOnaylananlar.ImagePosition = 1;
+            this.btnOnaylananlar.ImageZoom = 25;
+            this.btnOnaylananlar.LabelPosition = 41;
+            this.btnOnaylananlar.LabelText = "Onaylananlar";
+            this.btnOnaylananlar.Location = new System.Drawing.Point(0, 396);
+            this.btnOnaylananlar.Margin = new System.Windows.Forms.Padding(6);
+            this.btnOnaylananlar.Name = "btnOnaylananlar";
+            this.btnOnaylananlar.Size = new System.Drawing.Size(224, 86);
+            this.btnOnaylananlar.TabIndex = 7;
+            this.btnOnaylananlar.Click += new System.EventHandler(this.btnOnaylananlar_Click);
             // 
             // btnDashboard
             // 
-            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
-            this.btnDashboard.color = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(153)))));
-            this.btnDashboard.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(120)))));
+            this.btnDashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnDashboard.color = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(215)))), ((int)(((byte)(96)))));
+            this.btnDashboard.colorActive = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(180)))), ((int)(((byte)(85)))));
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.Font = new System.Drawing.Font("Century Gothic", 15.75F);
             this.btnDashboard.ForeColor = System.Drawing.Color.White;
@@ -187,6 +192,7 @@ namespace Lojistik_Randevu_Sistemi
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Size = new System.Drawing.Size(224, 86);
             this.btnDashboard.TabIndex = 6;
+            this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
             // bunifuElipse2
             // 
@@ -236,6 +242,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuImageButton1.WaitOnLoad = false;
             this.bunifuImageButton1.Zoom = 0;
             this.bunifuImageButton1.ZoomSpeed = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bunifuImageButton1_Click);
             // 
             // LblBaslik
             // 
@@ -250,13 +257,20 @@ namespace Lojistik_Randevu_Sistemi
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(36)))), ((int)(((byte)(185)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.panel2.Controls.Add(this.bunifuImageButton1);
             this.panel2.Controls.Add(this.LblBaslik);
             this.panel2.Location = new System.Drawing.Point(224, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(803, 41);
             this.panel2.TabIndex = 4;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel2;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // Musteri
             // 
@@ -266,8 +280,10 @@ namespace Lojistik_Randevu_Sistemi
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dashboard);
             this.Controls.Add(this.panel2);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Musteri";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Musteri";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -285,9 +301,9 @@ namespace Lojistik_Randevu_Sistemi
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Bunifu.Framework.UI.BunifuTileButton btnTedarikciler;
-        private Bunifu.Framework.UI.BunifuTileButton btnOperasyon;
-        private Bunifu.Framework.UI.BunifuTileButton btnMusteriler;
-        private Bunifu.Framework.UI.BunifuTileButton btnYoneticiler;
+        private Bunifu.Framework.UI.BunifuTileButton btnReddedilenler;
+        private Bunifu.Framework.UI.BunifuTileButton btnOnayBekleyen;
+        private Bunifu.Framework.UI.BunifuTileButton btnOnaylananlar;
         private Bunifu.Framework.UI.BunifuTileButton btnDashboard;
         private System.Windows.Forms.Panel dashboard;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -295,5 +311,6 @@ namespace Lojistik_Randevu_Sistemi
         private Bunifu.UI.WinForms.BunifuImageButton bunifuImageButton1;
         private System.Windows.Forms.Label LblBaslik;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }

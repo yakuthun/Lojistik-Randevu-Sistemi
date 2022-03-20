@@ -80,6 +80,7 @@ namespace Lojistik_Randevu_Sistemi
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panelEkleGuncelle = new System.Windows.Forms.Panel();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel2.SuspendLayout();
             this.bunifuPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
@@ -967,6 +968,13 @@ namespace Lojistik_Randevu_Sistemi
             this.panelEkleGuncelle.Size = new System.Drawing.Size(410, 91);
             this.panelEkleGuncelle.TabIndex = 25;
             // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel2;
+            this.bunifuDragControl1.Vertical = true;
+            // 
             // AdminMusteriDuzenle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1027,5 +1035,6 @@ namespace Lojistik_Randevu_Sistemi
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton3;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private System.Windows.Forms.Panel panelEkleGuncelle;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
