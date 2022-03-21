@@ -171,11 +171,23 @@
     <Compile Include="MusteriTedarikciGirisi.Designer.cs">
       <DependentUpon>MusteriTedarikciGirisi.cs</DependentUpon>
     </Compile>
+    <Compile Include="Operasyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Operasyon.Designer.cs">
+      <DependentUpon>Operasyon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Operasyonlar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Operasyonlar.Designer.cs">
       <DependentUpon>Operasyonlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperasyonPlakaKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OperasyonPlakaKontrol.Designer.cs">
+      <DependentUpon>OperasyonPlakaKontrol.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -191,11 +203,29 @@
     <Compile Include="Tedarikciler.Designer.cs">
       <DependentUpon>Tedarikciler.cs</DependentUpon>
     </Compile>
+    <Compile Include="TedarikciOnayBekleyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciOnayBekleyen.Designer.cs">
+      <DependentUpon>TedarikciOnayBekleyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciOnaylananlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciOnaylananlar.Designer.cs">
+      <DependentUpon>TedarikciOnaylananlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="TedarikciRandevuAl.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TedarikciRandevuAl.Designer.cs">
       <DependentUpon>TedarikciRandevuAl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TedarikciReddedilenler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TedarikciReddedilenler.Designer.cs">
+      <DependentUpon>TedarikciReddedilenler.cs</DependentUpon>
     </Compile>
     <Compile Include="Yonetici.cs">
       <SubType>Form</SubType>
@@ -239,8 +269,14 @@
     <EmbeddedResource Include="MusteriTedarikciGirisi.resx">
       <DependentUpon>MusteriTedarikciGirisi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Operasyon.resx">
+      <DependentUpon>Operasyon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Operasyonlar.resx">
       <DependentUpon>Operasyonlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperasyonPlakaKontrol.resx">
+      <DependentUpon>OperasyonPlakaKontrol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -258,8 +294,17 @@
     <EmbeddedResource Include="Tedarikciler.resx">
       <DependentUpon>Tedarikciler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciOnayBekleyen.resx">
+      <DependentUpon>TedarikciOnayBekleyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciOnaylananlar.resx">
+      <DependentUpon>TedarikciOnaylananlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TedarikciRandevuAl.resx">
       <DependentUpon>TedarikciRandevuAl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TedarikciReddedilenler.resx">
+      <DependentUpon>TedarikciReddedilenler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Yonetici.resx">
       <DependentUpon>Yonetici.cs</DependentUpon>

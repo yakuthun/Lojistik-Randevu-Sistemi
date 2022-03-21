@@ -41,6 +41,11 @@ namespace Lojistik_Randevu_Sistemi
                 Tedarikci frm3 = new Tedarikci();
                 frm3.Show();
             }
+            if (bunifuTextBox1.Text == "4")
+            {
+                Operasyon frm4 = new Operasyon();
+                frm4.Show();
+            }
             else
             {
                 MessageBox.Show("asd");

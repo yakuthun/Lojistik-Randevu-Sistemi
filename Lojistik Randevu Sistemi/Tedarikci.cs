@@ -81,6 +81,21 @@ namespace Lojistik_Randevu_Sistemi
         {
             OpenChildForm(new TedarikciRandevuAl(), sender);
         }
+
+        private void btnOnaylananlar_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new TedarikciOnaylananlar(), sender);
+        }
+
+        private void btnReddedilenler_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new TedarikciReddedilenler(), sender);
+        }
+
+        private void btnOnayBekleyen_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new TedarikciOnayBekleyen(), sender);
+        }
     }
 
 }

@@ -143,6 +143,7 @@ namespace Lojistik_Randevu_Sistemi
             this.btnReddedilenler.Name = "btnReddedilenler";
             this.btnReddedilenler.Size = new System.Drawing.Size(224, 86);
             this.btnReddedilenler.TabIndex = 9;
+            this.btnReddedilenler.Click += new System.EventHandler(this.btnReddedilenler_Click);
             // 
             // btnOnayBekleyen
             // 
@@ -162,6 +163,7 @@ namespace Lojistik_Randevu_Sistemi
             this.btnOnayBekleyen.Name = "btnOnayBekleyen";
             this.btnOnayBekleyen.Size = new System.Drawing.Size(224, 86);
             this.btnOnayBekleyen.TabIndex = 8;
+            this.btnOnayBekleyen.Click += new System.EventHandler(this.btnOnayBekleyen_Click);
             // 
             // btnOnaylananlar
             // 
@@ -181,6 +183,7 @@ namespace Lojistik_Randevu_Sistemi
             this.btnOnaylananlar.Name = "btnOnaylananlar";
             this.btnOnaylananlar.Size = new System.Drawing.Size(224, 86);
             this.btnOnaylananlar.TabIndex = 7;
+            this.btnOnaylananlar.Click += new System.EventHandler(this.btnOnaylananlar_Click);
             // 
             // btnDashboard
             // 
