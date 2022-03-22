@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Lojistik_Randevu_Sistemi
 {
@@ -17,6 +18,7 @@ namespace Lojistik_Randevu_Sistemi
             InitializeComponent();
         }
 
+        SqlConnection baglanti = new SqlConnection(@"Data Source=DESKTOP-0NEP572;Initial Catalog=LRS;Integrated Security=True");
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
@@ -24,32 +26,43 @@ namespace Lojistik_Randevu_Sistemi
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            
-            if (bunifuTextBox1.Text == "1")
+            baglanti.Open();
+            SqlCommand komut = new SqlCommand("SELECT * FROM KULLANICILAR WHERE KADI=@P1 AND SIFRE=@P2",baglanti);
+            komut.Parameters.AddWithValue("@P1", txtKadi.Text);
+            komut.Parameters.AddWithValue("@P2", txtSifre.Text);
+            SqlDataReader dr = komut.ExecuteReader();
+            dr.Read();
+            if (dr.HasRows)
             {
-                Yonetici frm1 = new Yonetici();
-                frm1.Show();
-            }
-            if (bunifuTextBox1.Text == "2")
-            {
-                Musteri frm2 = new Musteri();
-                frm2.Show();
-            }
-            if (bunifuTextBox1.Text == "3")
-            {
-                Tedarikci frm3 = new Tedarikci();
-                frm3.Show();
-            }
-            if (bunifuTextBox1.Text == "4")
-            {
-                Operasyon frm4 = new Operasyon();
-                frm4.Show();
+                if (dr["ROL"].ToString()=="A")
+                {
+                    Yonetici frm1 = new Yonetici();
+                    frm1.Show();
+                    this.Hide();
+                }
+                else if (dr["ROL"].ToString() == "B")
+                {
+                    Musteri frm2 = new Musteri();
+                    frm2.Show();
+                }
+                else if (dr["ROL"].ToString() == "C")
+                {
+                    Tedarikci frm3 = new Tedarikci();
+                    frm3.Show();
+                }
+                else if (dr["ROL"].ToString() == "D")
+                {
+                    Operasyon frm4 = new Operasyon();
+                    frm4.Show();
+                }
+             
             }
             else
             {
-                MessageBox.Show("asd");
+                MessageBox.Show("Kullanıcı bilgileri yanlış.");
             }
+            baglanti.Close();
+      
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)

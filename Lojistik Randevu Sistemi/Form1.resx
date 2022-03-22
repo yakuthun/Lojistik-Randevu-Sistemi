@@ -5324,7 +5324,7 @@
         CY9SUlJSUlJSUlJjloRHKSkpKSkpKSmpMQr4/6CW/PqpFu3dAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtKadi.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQQAAAAqCAYAAABV2SX4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACuSURBVHhe7dRRCQMxAETB+FeVIzIqowJaAuHBacgM7M8K
@@ -5333,7 +5333,7 @@
         CAKQVxCe5/nuw8zu3G7AyQHANsYflxfyq8zo5ioAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuTextBox1.IconRight" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtKadi.IconRight" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         xAAADsQBlSsOGwAAN9JJREFUeF7t3XlspVl95nHUarVarVarhVpECI2iCIEQQlFQhIJQRIQQ6Nq+99rl
@@ -5577,7 +5577,7 @@
         AQAgd4156CaLTqopAADkrjEPvV54xf8HqZyxIOiKGgMAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuTextBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtSifre.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQQAAAAqCAYAAABV2SX4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACuSURBVHhe7dRRCQMxAETB+FeVIzIqowJaAuHBacgM7M8K
@@ -5586,7 +5586,7 @@
         CAKQVxCe5/nuw8zu3G7AyQHANsYflxfyq8zo5ioAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuTextBox2.IconRight" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtSifre.IconRight" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAN
         1wAADdcBQiibeAAANfZJREFUeF7t3WuMXdd53nFDKAQjMIwgMFIEgREUQY18CAwbReHACNpPDmZ4zgxn
